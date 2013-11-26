@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nero.howmuch"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.nero.howmuch.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.nero.howmuch.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.nero.howmuch" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.nero.howmuch.GCMIntentService" />
+
+        <activity
+            android:name="com.nero.howmuch.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.consumer.Consumer_register"
+            android:label="@string/title_activity_consumer_register" >
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.seller.Seller_register"
+            android:label="@string/title_activity_seller_register" >
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.consumer.Consumer_main"
+            android:label="@string/title_activity_consumer_main" >
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.seller.Seller_main"
+            android:label="@string/title_activity_seller_main" >
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.seller.Seller_setting"
+            android:label="@string/title_activity_seller_setting" >
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.consumer.Consumer_post"
+            android:label="@string/title_activity_consumer_post" >
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.image.ImageEditActivity"
+            android:label="@string/title_activity_image_edit" >
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.consumer.Consumer_detail"
+            android:label="@string/title_activity_consumer_detail" >
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.seller.Seller_detail"
+            android:label="@string/title_activity_seller_detail" >
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.seller.Seller_reply"
+            android:label="@string/title_activity_seller_reply" 
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.consumer.Consumer_reply"
+            android:label="@string/title_activity_consumer_reply" 
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.consumer.Consumer_reply_view"
+            android:label="@string/title_activity_consumer_reply_view" >
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.seller.Seller_reply_view"
+            android:label="@string/title_activity_seller_reply_view" >
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.seller.Seller_info_edit"
+            android:label="@string/title_activity_seller_info_edit" >
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.seller.Seller_login"
+            android:label="@string/title_activity_seller_login" >
+        </activity>
+        <activity
+            android:name="com.nero.howmuch.ImageAttachActivity"
+            android:label="@string/title_activity_image_attach" >
+        </activity>
+    </application>
+
+</manifest>

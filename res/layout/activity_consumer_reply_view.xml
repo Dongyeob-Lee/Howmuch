@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_basic"
+    tools:context=".Consumer_reply_view" >
+	<com.fsn.cauly.CaulyAdView
+	    xmlns:app="http://schemas.android.com/apk/res/com.nero.howmuch"
+	    android:id="@+id/xmladview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    app:appcode="CAULY-3DTEST"
+	    app:effect="LeftSlide"/>
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+			<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="80dp"
+			    android:orientation="horizontal">
+           <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="80dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성자"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_consumer_reply_view_seller_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성자이름" />
+                <TextView
+                    android:id="@+id/tv_consumer_reply_view_seller_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성자사업자번호"/>
+                <TextView
+                    android:id="@+id/tv_consumer_reply_view_seller_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="연락처" />
+            </LinearLayout>
+             <RelativeLayout 
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <Button 
+                    android:id="@+id/btn_consumer_reply_view_reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="답글 쓰기"/>
+                </RelativeLayout>
+                </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line" />
+
+            <LinearLayout
+                android:id="@+id/ll_consumer_detail_tablelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_consumer_reply_view_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+           	<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line" />
+           	
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+                <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/tv_consumer_reply_view_contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:inputType="textMultiLine" >
+
+                    <requestFocus />
+                </TextView>
+            </ScrollView>
+
+                
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

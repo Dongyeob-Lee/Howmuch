@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:gravity="center"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".ImageAttachActivity" >
+    <com.nero.howmuch.ImageViewTouch
+        android:id="@+id/iv_image_attach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_image_attach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="다운로드 중..." />
+	
+</LinearLayout>

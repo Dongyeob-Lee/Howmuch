@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Howmuch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="str_btn_consumer">얼마에요?</string>
+    <string name="str_btn_seller">싸게드려요!</string>
+    <string name="title_activity_consumer_register">구매자 등록</string>
+    <string name="title_activity_seller_register">판매자 등록</string>
+    <string name="title_activity_consumer_main">얼마에요?</string>
+    <string name="title_activity_seller_main">싸게드려요!</string>
+    <string name="title_activity_seller_setting">판매자 설정</string>
+    <string name="title_activity_consumer_post">이거주세요</string>
+    <string name="title_activity_image_edit">사진편집</string>
+    <string name="title_activity_consumer_detail">이거주세요</string>
+    <string name="title_activity_seller_detail">이거주세요</string>
+    <string name="title_activity_seller_reply">답장 작성</string>
+    <string name="title_activity_consumer_reply">답장 작성</string>
+    <string name="title_activity_consumer_reply_view">구매자 답장</string>
+    <string name="title_activity_seller_reply_view">판매자 답장</string>
+    <string name="title_activity_seller_info_edit">Seller_info_edit</string>
+    <string name="title_activity_seller_login">Seller_login</string>
+    <string name="title_activity_image_attach">이미지</string>
+
+</resources>

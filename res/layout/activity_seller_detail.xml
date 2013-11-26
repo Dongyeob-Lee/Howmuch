@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_basic"
+    android:orientation="vertical"
+    tools:context=".Consumer_detail" >
+	<com.fsn.cauly.CaulyAdView
+	    xmlns:app="http://schemas.android.com/apk/res/com.nero.howmuch"
+	    android:id="@+id/xmladview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    app:appcode="CAULY-3DTEST"
+	    app:effect="LeftSlide"/>
+	
+	<RelativeLayout
+		    android:layout_width = "match_parent"
+		    android:layout_height="40dp"
+		    android:orientation="horizontal" 
+		    android:background="@drawable/custom_title_bar">
+		
+		      <TextView 
+		          android:layout_width="match_parent"
+		          android:layout_height="match_parent"
+		          android:gravity="center"
+		          android:textSize="20sp"
+		          android:textStyle="bold"
+		          android:textColor="#ffffff"
+		          android:text="얼마에요?"/>
+			  <Button
+			      android:id="@+id/btn_seller_detail_reply_sd"
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:layout_alignParentRight="true"
+		            android:gravity="center"
+		            android:layout_marginRight="5dp"
+		            android:textColor="#ffffff"
+		            android:textSize="20sp"
+		            android:text="답글(2)"/>
+ 	   </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="제목 |"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_seller_detail_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="title"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:src="@drawable/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="카테고리"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_seller_detail_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="티비/가전/시발/좆" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="지역"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_seller_detail_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="전국"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:src="@drawable/line" />
+			
+            <LinearLayout
+			    android:id="@+id/ll_consumer_detail_tablelayout"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+				<ImageView 
+				    android:id="@+id/iv_seller_detail_image1"
+				    android:layout_width="70dp"
+				    android:layout_height="70dp"/>
+			    <ImageView 
+				    android:id="@+id/iv_seller_detail_image2"
+				    android:layout_width="70dp"
+				    android:layout_height="70dp"
+				    android:layout_marginLeft="5dp"/>
+			    <ImageView 
+				    android:id="@+id/iv_seller_detail_image3"
+				    android:layout_width="70dp"
+				    android:layout_height="70dp"
+				    android:layout_marginLeft="5dp"/>
+			</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+					 <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line" />
+					 <ScrollView 
+					     android:layout_width="match_parent"
+					     android:layout_height="match_parent"
+					       android:fillViewport="true"
+        android:visibility="visible" >
+					      <TextView
+                        android:id="@+id/tv_seller_detail_contents"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:inputType="textMultiLine" >
+
+                        <requestFocus />
+                    </TextView>
+					 </ScrollView>
+                   
+
+                </LinearLayout>
+                <Button 
+				    android:id="@+id/btn_seller_detail_reply"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:text="답글 쓰기"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

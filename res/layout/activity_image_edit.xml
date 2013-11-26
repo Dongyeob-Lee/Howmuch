@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+    	<Button
+        	android:id="@+id/btn_image_edit_pen_black"
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="match_parent"
+        	android:text="검은색"
+        	/>
+    	<Button
+        	android:id="@+id/btn_image_edit_pen_blue"
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="match_parent"
+        	android:text="파란색"
+        	/>
+    	<Button
+        	android:id="@+id/btn_image_edit_pen_red"
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="match_parent"
+        	android:text="빨간색"
+        	/>
+    	<Button
+        	android:id="@+id/btn_image_edit_pen_white"
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="match_parent"
+        	android:text="하얀색"
+        	/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_image_edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="9"/>
+    
+	<Button 
+	    android:id="@+id/btn_image_edit_save"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:text="저장하기"/>
+    
+</LinearLayout>
